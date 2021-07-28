@@ -3,6 +3,7 @@ from selenium import webdriver
 from setup import setup
 import json
 import os
+import time
 
 # ========== SETUP ========== #
 
@@ -58,6 +59,8 @@ driver = webdriver.Chrome(options=chrome_options,
 # ========== EXECUTION ========== #
 
 driver.get(URL)
+
+time.sleep(2)
 
 driver.execute_script('window.print();')
 
