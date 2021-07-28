@@ -1,0 +1,6 @@
+venv
+chromedriver
+downloads
+__pycache__
+.idea
+.env
